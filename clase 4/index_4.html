@@ -1,0 +1,161 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+// var auto = {
+//   color: "rojo",
+//   puertas: 4,
+//   ruedas: 4,
+//   arranque: function() {
+//     return "vroom vroom";
+//   }
+// };
+
+// auto.motor = "naftero";
+// auto.radio = "";
+// auto
+
+
+
+var persona = {
+  nombre: "matias",
+  apellido: "alarcon",
+  edad: 30,
+  estudio: true,
+  pelicula:["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"],
+  presentacion: function() {
+    console.log("Hola soy " + this.nombre);
+  }
+}
+
+persona.presentacion();
+
+// console.log("Hola soy " + persona.nombre + " " + persona.apellido + ", tengo " + persona.edad + " años y " + persona.estudio + ". " + "Mis peliculas preferidas son: ");
+
+// for (var propiedades in persona) {
+//   console.log(persona[propiedades]);
+// }
+
+// for (var i = 0; i < persona.pelicula.length; i++) {
+//   console.log(persona.pelicula[i]);
+
+// var i = 0;
+// while (i < persona.pelicula.length) {
+//   console.log(persona.pelicula[i]);
+//   i++
+// }
+
+
+
+
+// var calculadora = {
+//   sumar: function(a, b) {
+//     return a + b;
+//   },
+//   restar: function(a, b) {
+//     return a - b;
+//   }
+// }
+
+// console.log("Esto es un resultado " + calculadora.restar(10, 10));
+
+// calculadora
+
+
+
+// function Auto() {
+//   this.color = "";
+//   this.puertas = 0;
+//   this.arranque = function() {
+//     console.log("vrooooom");
+//   };
+// }
+
+// var miAuto = new Auto();
+
+// miAuto.color = "rojo"
+// miAuto.puertas = 4;
+// miAuto
+
+
+
+
+
+// function agregarPeliculas () {
+  
+//   var titulo = prompt("Ingrese titulo");
+//   var id = prompt("Ingrese un id");
+  
+//   function Pelicula(tituloP) {
+//     this.id = null;
+//     this.titulo = tituloP;
+//     this.actores = [];
+//   }
+ 
+//  var peli = new Pelicula(titulo);
+//  peli.id = id;
+ 
+//  console.log(peli);
+  
+// }
+
+// agregarPeliculas()
+
+
+////
+
+
+
+var peliculas = [];
+
+
+
+function agregarPeliculas () {
+  
+  function Pelicula() {
+    this.id = null;
+    this.nombre = "";
+    this.actores = [];
+  }
+
+
+
+  while (confirm("Desea agregar peliculas?")) {
+    
+    var titulo = prompt("Ingrese titulo");
+    var numero = prompt("Ingrese ID");
+
+    var peli = new Pelicula();
+    console.log(peli);
+    
+    // peli.id = numero;
+    // peli.nombre = titulo;
+  
+    // peliculas.push(peli);
+  
+      
+  }
+
+  
+}
+
+agregarPeliculas()
+
+
+
+//   function Pelicula(tituloP) {
+//     this.titulo = tituloP;
+//     this.actores = [];
+//   }
+ 
+// var peli = new Pelicula(titulo);
+
+// console.log(peli);
+
+
+
+</script>
+
+</body>
+<html>
