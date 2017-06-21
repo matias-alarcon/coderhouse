@@ -1,38 +1,28 @@
+<!DOCTYPE html>
 <html>
+<head>
+	<title></title>
+</head>
 <body>
-
-<script type="text/javascript" >
-console.log("test");
-</script>
 
 
 <script type="text/javascript">
 
-var lista = ["hola", 42, "don't panic", "adams"];
-
-var autor = lista[3]; //Adams
-
-console.log(lista);
-console.log(lista[3]);
-
-var total = 50;
-total += 10;
-
-// var respuesta = prompt("¿Cuál es tu nombre?");
-// alert("Hola" + " " + respuesta + "!");
-
-
-// var edad = parseInt(prompt("¿Qué edad tenés?"));
-var edad = prompt("Primer número");
+// Preguntamos por un número
+var edad = prompt("¿Cuántos años tenés?");
+// A la variable edad la metemos en otra variable, llamada edadNumero, y le decimos a traves de parseInt que la transforme en un número
 var edadNumero = parseInt(edad);
 
-var edad2 = prompt("Segundo número");
-var edadNumero2 = parseInt(edad2);
+// Preguntamos por un segundo número pero esta vez incluimos ya en la definición de la variable el parámetro parseInt
+var año = parseInt(prompt("¿En qué año estamos?"));
 
-console.log("El resultado de la suma es:", edadNumero + edadNumero2, "\n", edadNumero - edadNumero2, "\n", edadNumero * edadNumero2);
+// Imprimimos en la consola en resultado de esta operación "\n"
+console.log("Si sumamos tu edad más el año el resultado es:", edadNumero + año + ". Si restamos tu edad del corriente año el resultado es:", edadNumero - año + ", y finalmente, si multiplicamos tu edad por el año obtenemos:", edadNumero * año + ".");
 
 
 </script>
 
+
+
 </body>
-<html>
+</html>
