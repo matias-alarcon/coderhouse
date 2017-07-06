@@ -49,3 +49,22 @@ function borrarItem () {
 
 	ul.removeChild(li);
 }
+
+
+var tarea = [];
+
+
+document.getElementById('btnAgregarTarea').addEventListener('click', 
+	function copate() {
+		var imprimir = document.getElementById("box");
+		tarea.push(document.getElementById("inputTarea").value);
+		imprimir.innerHTML = tarea.join('<br/>'); 
+	}
+);
+
+function toObject(arr) {
+  var rv = {};
+  for (var i = 0; i < arr.length; ++i)
+    if (arr[i] !== undefined) rv[i] = arr[i];
+  return rv;
+}
